@@ -1,0 +1,87 @@
+body {
+    width: 1000px;
+}
+
+header {
+
+}
+
+header > div {
+    margin: 25px 150px;
+    padding: 15px 0;
+    width: 575px;
+    border: 2px solid;
+    
+    text-align: center;
+}
+
+header > div > h1 {
+    text-align: center;
+    margin: 0px;
+
+    font-size: 3em;
+    font-family: 'EB Garamond';
+    font-weight: 100;
+
+}
+
+header > div > a {
+    margin: -4px 4px;
+
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-size: 0.8em;
+    color: gray;
+    text-decoration: none;
+}
+
+#home {
+    color: black;
+}
+
+/* header > div:nth-child(2) {
+    color: black;
+} */
+
+.images {
+    margin-left: 100px;
+    margin-right: 100px; 
+    margin-top: 75px;
+    margin-bottom: 15px;
+
+    width: 685px;
+    overflow: hidden;
+
+}
+
+.pier{
+    width: 868px;
+    height: 547px;
+}
+
+.road {
+    width: 910px;
+    height: 560px;
+}
+
+.lake {
+
+}
+
+.footer {
+    width: 575px;
+    margin: 30px 150px;
+    text-align: center;
+}
+
+.footer > p > i {
+    margin: 0px, 10px;
+}
+
+#copyright {
+    font-size: 0.5em;
+}
+
+#icons {
+    font-size: 0.9em;
+}
