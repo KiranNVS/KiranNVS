@@ -1,13 +1,14 @@
 body {
-    width: 1000px;
-}
+    width: 706px;
+    margin: 0 auto;
+ }
 
 header {
 
 }
 
 header > div {
-    margin: 25px 150px;
+    margin: 25px 56px;
     padding: 15px 0;
     width: 575px;
     border: 2px solid;
@@ -44,8 +45,8 @@ header > div > a {
 } */
 
 .images {
-    margin-left: 100px;
-    margin-right: 100px; 
+    margin-left: 10px;
+    margin-right: 10px; 
     margin-top: 75px;
     margin-bottom: 15px;
 
@@ -70,7 +71,7 @@ header > div > a {
 
 .footer {
     width: 575px;
-    margin: 30px 150px;
+    margin: 30px 56px;
     text-align: center;
 }
 
