@@ -52,21 +52,29 @@ header > div > a {
 
     width: 685px;
     overflow: hidden;
+    position: relative;
 
 }
 
-.pier{
-    width: 868px;
+.pier {
+    width: 1176px;
     height: 547px;
+    position: relative;
+    left: -240px;
 }
 
 .road {
-    width: 910px;
+    width: 1349px;
     height: 560px;
+    position: relative;
+    left: -324px;
 }
 
 .lake {
-
+    position: relative;
+    left: -110px;
+    height: 576px;
+    width: 906px;
 }
 
 .footer {
