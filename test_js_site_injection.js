@@ -9,8 +9,7 @@ let observer = new MutationObserver((mutations) => {
 });
 
 observer.observe(document.body, {
-  characterDataOldValue: true, 
-  subtree: true, 
+  characterDataOldValue: true,
   childList: true, 
   characterData: true
 });
