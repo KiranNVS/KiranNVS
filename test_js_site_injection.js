@@ -6,7 +6,9 @@ let observer = new MutationObserver((mutations) => {
   //       console.log("Testing Biodex js site injection")
   //   }
   // });
-  console.log("Testing Biodex js site injection")
+  if (mutations.length > 0) {
+    console.log("Testing Biodex js site injection")
+  }
 });
 
 observer.observe(document.body, {
