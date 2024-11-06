@@ -13,7 +13,7 @@ function sendEventToEngine(url, eventData) {
     },
     body: encodeURI(JSON.stringify(eventData)),
   });
-  console.log(`sent event to engine at ${ENGINE_URL}`}
+  console.log(`sent event to engine at ${ENGINE_URL}`);
 }
 
 sendEventToEngine(ENGINE_URL, {notebookName: `bioddex_iframe_test`})
