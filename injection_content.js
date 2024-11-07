@@ -1,10 +1,10 @@
+// content.js
 window.addEventListener("message", (event) => {
-  if (event.origin !== window.location.origin) {
-    console.log("Something else is happening");
-    return;}
+  if (event.origin !== window.location.origin) return;
 
-  // Handle the message
   if (event.data.message === "load") {
-    console.log("Test Loaded. Ready to work on things now.");
+    console.log("Content script loaded.");
+  } else if (event.data.message === "pageUpdated") {
+    console.log("Content script detected page update in SPA.");
   }
 });
