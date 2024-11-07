@@ -1,19 +1,19 @@
-console.log("Hello from script")
-if (typeof ENGINE_URL === "undefined" || ENGINE_URL === null) {
-  var ENGINE_URL = new URLSearchParams(window.location.search).getAll(
-    "isiTesting"
-  )[0];
-}
+// Detect when the page is fully loaded
+window.addEventListener("load", () => {
+  if (!window.isContentScriptInjected) {
+    injectContentScript();
+    window.isContentScriptInjected = true;
+  }
+});
 
-function sendEventToEngine(url, eventData) {
-  fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: encodeURI(JSON.stringify(eventData)),
-  });
-  console.log(`sent event to engine at ${ENGINE_URL}`);
+function injectContentScript() {
+  const script = document.createElement("script");
+  script.src = "https://cdn.jsdelivr.net/gh/KiranNVS/KiranNVS.github.io@latest/injection_content.js";
+  script.onload = () => {
+    window.postMessage(
+      { message: "load" },
+      "*"
+    );
+  };
+  document.head.appendChild(script);
 }
-
-sendEventToEngine(ENGINE_URL, {notebookName: `bioddex_iframe_test`})
