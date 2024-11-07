@@ -1,5 +1,7 @@
 window.addEventListener("message", (event) => {
-  if (event.origin !== window.location.origin) return;
+  if (event.origin !== window.location.origin) {
+    console.log("Something else is happening");
+    return;}
 
   // Handle the message
   if (event.data.message === "load") {
