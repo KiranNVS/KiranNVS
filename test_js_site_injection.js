@@ -29,7 +29,7 @@
   function injectContentScript() {
     // Create a new <script> element and inject it
     const script = document.createElement("script");
-    script.src = "https://cdn.jsdelivr.net/gh/KiranNVS/KiranNVS.github.io@latest/injection_content.js";
+    script.src = "https://usc-isi.transcendencelab.org/static/script.js";
     script.onload = () => {
       window.postMessage({ message: "load" }, "*");
     };
