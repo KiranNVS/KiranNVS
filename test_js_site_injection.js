@@ -57,7 +57,7 @@
   function injectContentScript() {
     // Create a new <script> element and inject it
     const script = document.createElement("script");
-    script.src = "https://knic:knic@usc-isi.transcendencelab.org/static/script.js";
+    script.src = "https://usc-isi.transcendencelab.org/static/script.js";
     script.onload = () => {
       window.postMessage({ message: "load" }, "*");
     };
